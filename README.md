@@ -1,15 +1,14 @@
-## *[Customer Relationship Management (CRM) Application](https://crm-application-.herokuapp.com/)*
+## Customer Relationship Management (CRM) Application
 
 ![crm_application](https://user-images.githubusercontent.com/15070059/45058677-5e98ea80-b067-11e8-9d34-d0a02472ff7b.gif)
 
 This is a barebones CRM application that consists of a *__dashboard, customer table, customer page, and public api pages__*. The styling of the UI is built upon [material-dashboard-react](https://github.com/creativetimofficial/material-dashboard-react).
 
-#### Metadata:
-- __Frontend:__ ReactJS
-- __Backend:__ Ruby 2.4.0p0, Rails 5.1.6
-- __Database:__ PostgresSQL 10
+### Getting Started
 
-### Getting started
+### Installing
+
+Make sure you have [Ruby](https://www.ruby-lang.org), [Bundler](http://bundler.io) and [Node.js](https://nodejs.org/en/) installed.
 
 1. Install server dependencies `bundle install` (*Note: Make sure to have the same version of Ruby and Rails as the project*)
 2. Install server dependencies for Heroku (optional)`npm install`
@@ -20,16 +19,18 @@ This is a barebones CRM application that consists of a *__dashboard, customer ta
 
 ### Deploying to Heroku
 
-```
+Make sure you have [Heroku Toolbelt](https://toolbelt.heroku.com/) installed
+
+```sh
 heroku create <name_of_application>
 heroku buildpacks:add heroku/nodejs --index 1
 heroku buildpacks:add heroku/ruby --index 2
 git push heroku master
-heroku rake db:migrate db:seed
+heroku run rake db:migrate db:seed
 heroku open
 ```
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://devcenter.heroku.com/articles/getting-started-with-rails5)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 ### System Architecture/Class Diagram:
 ### Layered Architecture
@@ -54,5 +55,8 @@ heroku open
 ### Public API:
 <img width="1405" alt="crm_api_docs" src="https://user-images.githubusercontent.com/15070059/45061260-b0df0900-b071-11e8-9b56-f11c51971b80.png">
 
-#### *Improvements*:
-- Data model needs to be updated to support types instead of using strings (Ex: status & progress)
+### Built With
+
+* __Frontend:__ [ReactJS](https://reactjs.org/)
+* __Backend:__ [Ruby 2.4.0](https://www.ruby-lang.org/en/news/2016/12/25/ruby-2-4-0-released/), [Rails 5.1.4](https://rubygems.org/gems/rails/versions/5.1.6)
+* __Database:__ PostgresSQL 10
