@@ -35,7 +35,7 @@ heroku open
 ### System Architecture/Class Diagram:
 ### Layered Architecture
 
-![crm_architecture](https://user-images.githubusercontent.com/15070059/45062205-eb4aa500-b075-11e8-99aa-a2595d57037b.png)
+![crm_architecture](https://user-images.githubusercontent.com/15070059/49346374-497c2980-f65f-11e8-9570-971da36791b4.png)
 
 
 ## Features
